@@ -1,7 +1,7 @@
 function expandGroups(event) {
   var els = document.getElementsByClassName('title');
   if (event === 'touchend') {
-    event.preventDefault();
+    return;
   }
   Array.prototype.forEach.call(els, function(el) {
     el.addEventListener(event, function () {
